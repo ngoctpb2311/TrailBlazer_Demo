@@ -75,8 +75,8 @@
     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonDataModifierAssets\BlendModeMaterials\BlendModeMaterialsAsset.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataAsset.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Mesh Generation\SkeletonRendererInstruction.cs" />
-    <Compile Include="Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollower.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Mesh Generation\SpineMesh.cs" />
+    <Compile Include="Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollower.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollowerGraphic.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\ActivateBasedOnFlipDirection.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Utility\AtlasUtilities.cs" />

@@ -58,12 +58,37 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\UniRx.Async\Editor\UniTaskTrackerWindow.cs" />
-    <Compile Include="Assets\UniRx.Async\Editor\UniTaskTrackerTreeView.cs" />
-    <Compile Include="Assets\UniRx.Async\Editor\SplitterGUILayout.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.dll" />
+    <Compile Include="Assets\Editor\RawDataExport\GuiTabRenderBase.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\HairConfigData.cs" />
+    <Compile Include="Assets\Editor\Game\InspectorTabBase.cs" />
+    <Compile Include="Assets\Editor\BuildPipeline\CommandLineBuild.cs" />
+    <Compile Include="Assets\Editor\RawDataExport\ExcelFile.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\SerializableData\RigidBodySerializable.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\SerializableData\Vector3Serializable.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\EnvironmentGroup.cs" />
+    <Compile Include="Assets\Editor\Game\TeamFormationManagerInspector.cs" />
+    <Compile Include="Assets\Editor\Game\BattleEffect\NormalAttackInspectorTab.cs" />
+    <Compile Include="Assets\Editor\Game\BattleEffect\DemoFxManagerInspector.cs" />
+    <Compile Include="Assets\Editor\RawDataExport\GuiTabConfig.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\SerializableData\CharacterJointSerializable.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\SerializableData\SoftJointLimitSpringSerializable.cs" />
+    <Compile Include="Assets\Editor\Game\BattleEffect\PlaySettingInspectorTab.cs" />
+    <Compile Include="Assets\Editor\RawDataExport\GuiTabShowData.cs" />
+    <Compile Include="Assets\Editor\Game\MeleePositionInspectorTab.cs" />
+    <Compile Include="Assets\Editor\Game\TeamFormationInspectorTab.cs" />
+    <Compile Include="Assets\Editor\RawDataExport\Property.cs" />
+    <Compile Include="Assets\Editor\RawDataExport\DataExportConfig.cs" />
+    <Compile Include="Assets\Editor\RawDataExport\Sheet.cs" />
+    <Compile Include="Assets\Editor\Game\BattleEffect\InspectorTabBase.cs" />
+    <Compile Include="Assets\Editor\Game\BattleEffect\FxConfigInspector.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\LightMapSetting.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\SerializableData\SoftJointLimitSerializable.cs" />
+    <Compile Include="Assets\Editor\Game\BattleEffect\InitConfigInspectorTab.cs" />
+    <Compile Include="Assets\Editor\Utilities\PlaySceneEditor.cs" />
+    <Compile Include="Assets\Editor\Game\BattleEffect\FxConfigSaveData.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\CharacterExport.cs" />
+    <Compile Include="Assets\Editor\RawDataExport\Manager.cs" />
+    <Compile Include="Assets\Editor\GeneralTool\SerializableData\SphereColliderSerializable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -354,11 +379,20 @@
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
+      <HintPath>Assets\Plugins\Zenject\OptionalExtras\ReflectionBaking\Lib\Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -783,6 +817,9 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
@@ -791,9 +828,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
@@ -825,11 +859,11 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
     <Reference Include="PPv2URPConverters">
       <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
@@ -854,9 +888,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{7D2FA5F5-6E84-9760-0616-8C8516AA5125}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{464F4304-AE84-46D6-8555-EC84CC5D3A9B}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{577BB009-1622-BC48-9A93-3DEA398E8B71}</Project>
+      <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

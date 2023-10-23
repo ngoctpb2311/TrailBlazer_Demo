@@ -1,17 +1,11 @@
 fileFormatVersion: 2
-guid: bb068d59aeac2624d99db3d89a90185f
+guid: 175b740e41a5db94f8e3f3022f1dff17
 ModelImporter:
-  serializedVersion: 19301
-  internalIDToNameTable:
-  - first:
-      74: 6200578666267062213
-    second: run
-  - first:
-      74: -8781875593981425398
-    second: run
+  serializedVersion: 19300
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
-    materialImportMode: 0
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -19,7 +13,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 1
+    optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -34,44 +28,9 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths:
-    - GRP_bindjoints/Hip/Spine_01/Spine_02/Spine_03/Neck/Head/GRP_LCT_TopPoint_Zero/LCT_TopPoint
-    - GRP_bindjoints/Hip/Spine_01/Spine_02/Spine_03/L_Shoulder/L_Arm/L_ForeArm/L_Wrist/L_Weapon_01/GRP_LCT_L_Weapon_Zero/LCT_L_Weapon
-    - GRP_bindjoints/Hip/Spine_01/Spine_02/Spine_03/L_Shoulder/L_Arm/L_ForeArm/L_Wrist/GRP_LCT_LeftHand_Zero/LCT_LeftHand
-    - GRP_bindjoints/Hip/Spine_01/Spine_02/Spine_03/R_Shoulder/R_Arm/R_ForeArm/R_Wrist/GRP_LCT_RightHand/LCT_RightHand
-    - GRP_bindjoints/Hip/Spine_01/Spine_02/Spine_03/R_Shoulder/R_Arm/R_ForeArm/R_Wrist/GRP_LCT_R_Weapon/LCT_R_Weapon
-    - GRP_bindjoints/Hip/Spine_01/Spine_02/Spine_03/GRP_LCT_HitPoint_Zero/LCT_HitPoint
+    extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: run
-      takeName: run
-      internalID: -8781875593981425398
-      firstFrame: 1
-      lastFrame: 20
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -84,7 +43,6 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
-    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -131,7 +89,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
